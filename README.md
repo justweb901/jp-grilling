@@ -19,3 +19,5 @@ Changes / Bugs
 Deployed with Netlify
 Live Link: https://jp-grilling.netlify.app/
 
+Creators: 
+Jehovah and I (Because I'm ratchet...lol)
