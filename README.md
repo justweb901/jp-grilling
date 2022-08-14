@@ -4,6 +4,7 @@ Title: Jp Grilling
 - Website dedicated to AKA John Pace for being a dear friend and brother to my mom and I 
 
 Description 
+- Static website
 - Grilling Resturant serving meat, chicken, seafood, kabobs, and side options
 - Gateway Pt 2 - Project Cohort 11 
 
