@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <title>JP Grilling | Menu</title>
+</head>
+
+<body>
+
+  <!-- Here we have the header that holds the following HTML elements which is simply 
+    content that our browser quickly renders onto the page 
+   nav bar that holds an img tag which is the logo 
+    that's wrapped around an anchor tag that links to index.html which is our default home page
+   h2 header that is used for introducing new content like a title for example then a paragraph that goes into more depth about the title.
+    With the h2 we have a span which is an inline element used specifically for stying our text J, P, and G within the h2 header in this case; JP Grilling
+  ul which is used to store our list items that automatically come with bullet points, if I changed an unordered list to an order list our list items would be
+    numbered instead.  And we have Home, Menu, Contact, and  we also have used a little bit of javascript that's been applied to our last list item My Plate to send an alert letting us know that this page does not exist yet   
+  -->
+
+  <header class="introduction">
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="images/cooking.png" alt="Cartoon House with heart" />
+      </a>
+
+
+      <h2><span>J</span>P <span>G</span>rilling</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li onclick="myAlert()"><a href="#">My Plate</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- h2 class with a class of menu and food-category with the text menu and meat and chicken  -->
+  <h2 class="menu">Menu</h2>
+  <h2 class="food-category">Meat and Chicken</h2>
+
+  <!-- Within our main content we have a section with the name of 
+    center-cards which is the parent container of all of our products on our menu page, 
+    this parent will help us style our products because we want them to go horizontally within our css
+  We have a total of four product names with an h2 header, an img, and two paragraph tags with a price, 
+  description and an anchor tag with a bit of javascript that will tell the user that the add to 
+  my plate page does not exist   -->
+  <main class="center-cards">
+    <section class="product-card">
+      <h2>John's Speciality Ribs</h2>
+      <img src="./images/ribs.jpg" alt="Ribs">
+      <p>$25.00</p>
+      <p>6 pieces of mouth-watering ribs
+      </p>
+      <a href="#" onclick="myAlert()">Add To My Plate</a>
+    </section>
+    <section class="product-card">
+      <h2>Rib Platter</h2>
+      <img src="./images/rib-platter.jpg" alt="Rib platter">
+      <p>$35.00</p>
+      <p>Get your protein in with this very tasty platter</p>
+      <a href="#" onclick="myAlert()">Add To My Plate</a>
+    </section>
+    <section class="product-card">
+      <h2>Roman's Chicken</h2>
+      <img src="./images/grilled-chicken.jpg" alt="Ribs">
+      <p>$15.00</p>
+      <p>3 pieces grilled to absolute perfection</p>
+      <a href="#" onclick="myAlert()">Add To My Plate</a>
+    </section>
+    <section class="product-card">
+      <h2>Chicken Platter</h2>
+      <img src="./images/grilled-chicken-platter.jpg" alt="Chicken platter">
+      <p>$25.00</p>
+      <p>The whole bird white and dark meat</p>
+      <a href="#" onclick="myAlert()">Add To My Plate</a>
+    </section>
+    <!-- Seafood -->
+    <h2 class="food-category">Seafood</h2>
+    <section class="product-card">
+      <h2>Shrimp</h2>
+      <img src="./images/grilled-shrimp.jpg" alt="Grilled shrimp">
+      <p>$15.00</p>
+      <p>Golden and lightly seasoned</p>
+      <a href="#" onclick="myAlert()">Add To My Plate</a>
+    </section>
+
+    <section class="product-card">
+      <h2>Shrimp Boil</h2>
+      <img src="./images/grilled-shrimp-boil.jpg" alt="Shrimp boil">
+      <p>$35.00</p>
+      <p>Your mouth will have a party </p>
+      <a href="#" onclick="myAlert()">Add To My Plate</a>
+    </section>
+    <section class="product-card">
+      <h2>Halibut</h2>
+      <img src="./images/grilled-halibut.jpg" alt="Halibut">
+      <p>$20.00</p>
+      <p>Tender, flacky, and good</p>
+      <a href="#" onclick="myAlert()">Add To My Plate</a>
+    </section>
+    <section class="product-card">
+      <h2>Salmon</h2>
+      <img src="./images/grilled-salmon.jpg" alt="Ribs">
+      <p>$20.00</p>
+      <p>Fresh and cooked just right</p>
+      <a href="#" onclick="myAlert()">Add To My Plate</a>
+    </section>
+    <!-- Kaboobs -->
+    <h2 class="food-category">Kabobs</h2>
+    <div class="center-cards">
+      <section class="product-card">
+        <h2>Beef</h2>
+        <img src="./images/beef-kabob.jpg" alt="Beef kabob">
+        <p>$15.00</p>
+        <p>Sirloin steak and our secret marinade </p>
+        <a href="#" onclick="myAlert()">Add To My Plate</a>
+      </section>
+      <section class="product-card">
+        <h2>Chicken</h2>
+        <img src="./images/chicken-kabob.jpg" alt="Chicken kabob">
+        <p>$10.00</p>
+        <p>Chicken and our secret marinade</p>
+        <a href="#" onclick="myAlert()">Add To My Plate</a>
+      </section>
+      <section class="product-card">
+        <h2>Fish</h2>
+        <img src="./images/fish-kabob.jpg" alt="Fish kabob">
+        <p>$10.00</p>
+        <p>Swordfish and our secret marinade</p>
+        <a href="#" onclick="myAlert()">Add To My Plate</a>
+      </section>
+      <section class="product-card">
+
+        <h2>Veggie</h2>
+        <img src="./images/veggie-kabob.jpg" alt="Veggie kabob">
+        <p>$8.00</p>
+        <p>Chunky veggies and our secret marinade</p>
+        <a href="#" onclick="myAlert()">Add To My Plate</a>
+      </section>
+      <!-- Side Options -->
+      <h2 class="food-category">Side Options</h2>
+      <div class="center-cards">
+        <section class="product-card">
+          <h2> Mac & Chesse</h2>
+          <img src="./images/mac-n-cheese.jpg" alt="Mac and cheese">
+          <p>$5.00</p>
+          <p>Creamy with a delicious crumbly top</p>
+          <a href="#" onclick="myAlert()">Add To My Plate</a>
+        </section>
+        <section class="product-card">
+          <h2>Collard Greens</h2>
+          <img src="./images/collard-greens.jpg" alt="Collard greens">
+          <p>$5.00</p>
+          <p>Community picked collards with a bit of sweetness </p>
+          <a href="#" onclick="myAlert()">Add To My Plate</a>
+        </section>
+        <section class="product-card">
+          <h2>Baked Beans</h2>
+          <img src="./images/tanyas-beans.jpg" alt="Baked beans">
+          <p>$5.00</p>
+          <p>Baked beans stewed in our secret sauce</p>
+          <a href="#" onclick="myAlert()">Add To My Plate</a>
+        </section>
+        <section class="product-card">
+          <h2>Kale Salad</h2>
+          <img src="./images/kale-salad.jpg" alt="Kale salad">
+          <p>$5.00</p>
+          <p>Baby kale prepared fresh daily</p>
+          <a href="#" onclick="myAlert()">Add To My Plate</a>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- End of menu.html page which is the footer that holds social media images with instagram, facebook, twitter, snapchat with anchor tags around them that go specifically to the url that we tell it to go and we have our copyright -->
+  <footer class="end-of-page">
+
+
+    <div class="link-container">
+      <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram logo" /></a>
+
+
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook-app-logo.png" alt="Facebook logo" /></a>
+
+
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="Twitter logo" /></a>
+
+
+
+      <a href="https://snapchat.com" target="_blank">
+        <img src="images/snapchat.png" alt="Snapchat logo" /></a>
+      <p>Copyright &copy; 2022 JP Grilling All Rights Reserved</p>
+
+
+      </div>
+
+
+  </footer>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

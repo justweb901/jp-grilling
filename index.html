@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <title>JP Grilling | Home</title>
+</head>
+
+<body>
+  <!-- Here we have the header that holds the following HTML elements which is simply 
+    content that our browser quickly renders onto the page 
+   nav bar that holds an img tag which is the logo 
+    that's wrapped around an anchor tag that links to index.html which is our default home page
+   h2 header that is used for introducing new content like a title for example then a paragraph that goes into more depth about the title.
+    With the h2 we have a span which is an inline element used specifically for stying our text J, P, and G within the h2 header in this case; JP Grilling
+  ul which is used to store our list items that automatically come with bullet points, if I changed an unordered list to an order list our list items would be
+    numbered instead.  And we have Home, Menu, Contact, and  we also have used a little bit of javascript that's been applied to our last list item My Plate to send an alert letting us know that this page does not exist yet   
+  -->
+  <header class="introduction">
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="images/cooking.png" alt="Cartoon House with heart" />
+      </a>
+
+
+      <h2><span onclick="myAlert(this)">J</span>P <span>G</span>rilling</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li onclick="myAlert()"><a href="#">My Plate</a></li>
+      </ul>
+    </nav>
+    <section class="hero-video">
+      <video muted autoplay loop>
+        <source src="./videos/meat-cooking.mp4" type="video/mp4">
+      </video>
+      <h2><span>J</span>P <span>G</span>rilling</h2>
+      <a href="menu.html">Order Now</a>
+    </section>
+  </header>
+
+  <!-- We have another section class named separator that will be used as our spacing instead of using a line break which creates space for your html elements to look like your sections within a web page are not touching each other
+ We have our main content that holds our about, mission statement with a paragraph tag that tells us more about JP Grilling, link tags that link to our menu and contact page
+ Our next sections within main content holds our testimonal reviews with three images of people with a header tag 3, a paragraph tag; telling us about thier experience with the resturant -->
+  <!-- <section class="separator"></section> -->
+  <main class="main-content">
+    <section class="about">
+      <h2>About Us</h2>
+      <p class="mission-statement">Welcome to JP Grilling! We are a family-owned business that knows what goes into an
+        excellent grill, and our ingredients are fresh! We believe that all should come here, not only
+        to
+        enjoy good quality food but not have to break the bank while doing so. Below you'll find some sastisifed
+        customers!
+        Our main course consists of meat and
+        chicken, seafood, kabobs, and side items, which you can find on the <a class="go-to-menu-page"
+          href="menu.html">menu page</a>. Please
+        contact us on the <a class="go-to-contact-page" href="contact.html">contact page</a> if you would like for us to
+        add your favorite food item, you have
+        any questions, concerns, or feedback.
+      </p>
+    </section>
+
+    <section class="testimonal-container">
+      <h2 class="reviews">Hear What People Have to Say</h2>
+      <div class="customers">
+        <section class="testimonial-one">
+          <img src="images/pexels-tarzine-jackson-773371.jpg" alt="Woman Smiling at camera">
+          <h3>"Amazing! Love It!"</h3>
+          <p>"I NEVER liked ribs until I tried John's! No words! You have to check this restaurant out!" - Latonya
+          </p>
+        </section>
+        <section class="testimonial-two">
+          <img src="images/testimonal-one.jpg" alt="Woman looking into camera">
+          <h3>"Treated Like Family."</h3>
+          <p>"JP Grilling not only has amazing food but also an amazing staff. John makes sure you're taken care of." -
+            Sarah
+          </p>
+        </section>
+        <section class="testimonial-three">
+          <img src="images/man-smiling-one.jpg" alt="Woman looking into camera">
+          <h3>"My Dad Is Jealous."</h3>
+          <p>"I've lost track of how many times I've come here. My dad's ribs have nothing on John's! - James
+          </p>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- End of our first index.html page which is the footer that holds social media images with instagram, facebook, twitter, snapchat with anchor tags around them that go specifically to the url that we tell it to go and we have our copyright -->
+  <footer class="end-of-page">
+
+
+    <div class="link-container">
+      <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram logo" /></a>
+
+
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook-app-logo.png" alt="Facebook-app-logo logo" /></a>
+
+
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="Twitter logo" /></a>
+
+
+
+      <a href="https://snapchat.com" target="_blank">
+        <img src="images/snapchat.png" alt="Snapchat logo" /></a>
+      <p>Copyright &copy; 2022 JP Grilling All Rights Reserved</p>
+
+
+    </div>
+
+
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+
+</html>

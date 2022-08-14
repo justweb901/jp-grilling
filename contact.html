@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <title>JP Grilling | Contact</title>
+</head>
+
+<body>
+  <!-- Here we have the header that holds the following HTML elements which is simply 
+    content that our browser quickly renders onto the page 
+   nav bar that holds an img tag which is the logo 
+    that's wrapped around an anchor tag that links to index.html which is our default home page
+   h2 header that is used for introducing new content like a title for example then a paragraph that goes into more depth about the title.
+    With the h2 we have a span which is an inline element used specifically for stying our text J, P, and G within the h2 header in this case; JP Grilling
+  ul which is used to store our list items that automatically come with bullet points, if I changed an unordered list to an order list our list items would be
+    numbered instead.  And we have Home, Menu, Contact, and  we also have used a little bit of javascript that's been applied to our last list item My Plate to send an alert letting us know that this page does not exist yet   
+  -->
+  <header class="introduction">
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="images/cooking.png" alt="Cartoon House with heart" />
+      </a>
+
+
+      <h2><span>J</span>P <span>G</span>rilling</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="send-alert" onclick="myAlert(this)"><a href="#">My Plate</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- A section called background-image that wraps around our entire main content tag; this will display our background image
+    then we have our contact-text with an h2, and a paragraph tag -->
+    <div class="background-image">
+      <section class="contact-text">
+        <h2>Any Sugesstions?</h2>
+        <p>Please submit the form below and we will be in touch shortly!</p>
+      </section>
+
+
+      <!-- Our main tag with a class of form-container holds our form that has a name, action and method. The name is for referencing, action is for processing but we put a # symbol to make it an empty value since our form does not have a processing link yet to reference
+      and we have post that's sending our data and waiting for a reponse to be sent -->
+      <!-- Within our form, we have a label for the user to see what they should type within the input with a span that holds an astrick next to the label so the user nows that the input is required -->
+      <!-- We also have a label for a message the user can add with a textarea that displays a message box and we have our input type which is submit that represents our button -->
+
+      <div class="contact-container">
+        <form name="contact-form" action="#" method="POST">
+          <label for="firstname">First Name: <span class="red-symbol">*</span></label>
+          <input type="text" name="firstname" id="firstname" required>
+          <label for="lastname">Last Name: <span class="red-symbol">*</span></label>
+          <input type="text" name="lastname" id="lastname" required>
+          <label for="email">Email: <span class="red-symbol">*</span></label>
+          <input type="email" name="email" id="email" required>
+          <label for="tel">Phone Number: <span class="red-symbol">*</span></label>
+          <input type="tel" name="tel" id="tel" required>
+          <label for="message">Message:</label>
+          <textarea name="message" id="message"></textarea>
+          <input type="submit">
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- End of about.html page which is the footer that holds social media images with instagram, facebook, twitter, snapchat with anchor tags around them that go specifically to the url that we tell it to go and we have our copyright -->
+  <footer class="end-of-page">
+
+
+    <div class="link-container">
+      <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram logo" /></a>
+
+
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook-app-logo.png" alt="Facebook-app-logo logo" /></a>
+
+
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="Twitter logo" /></a>
+
+
+
+      <a href="https://snapchat.com" target="_blank">
+        <img src="images/snapchat.png" alt="Snapchat logo" /></a>
+      <p>Copyright &copy; 2022 JP Grilling All Rights Reserved</p>
+
+
+    </div>
+
+
+
+  </footer>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

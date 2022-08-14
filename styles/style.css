@@ -1,0 +1,667 @@
+/* Targeting all elements within all html pages */
+/* Resetting margin and padding; default browser settings  */
+/* CSS adds it's own border and padding to the width of elements;
+box-sizing takes into account the width that you specify without
+adding an extra border and padding to our width which would increase 
+the overall size of our elements  */
+/* Box-sizing: border-box controls the overall size that you specify for our 
+; padding and border; it won't increase the width and height */
+/* All text will be cursive on all pages */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+/* background-color with a specific hexidemical number in our
+body, so the entire page will have this color */
+/* Hexidemical number represents red, green, and blue  */
+
+
+body {
+  background-color: #e8d7c4;
+}
+
+/* setting the font-size to be 62.5% in our root document 
+where we can divide this number by 10 to get a specific number for 
+our css units rem which is helpful for more responsiveness to our page
+explain pixels */
+
+/* height: 101% ; in some cases, you don't see the side bar scroll depending on how
+much content is within the body on different HTML pages. This will push your nav bar 
+off to the side creating an inconsistency with the nav bar on your pages. You don't 
+have to add this if you have enough content, but sometimes you may not have a lot 
+of content on your page. So this helps make sure that the navbar on all pages 
+creates enough space to be consistent. 
+  */
+
+
+html {
+  font-size: 62.5%;
+  height: 101%;
+}
+
+/* Home Page */
+
+
+
+/* styling our header called introduction with a max-width of 100% to constain our content;
+helps with some responsiveness */
+
+
+.introduction {
+  max-width: 100%;
+}
+
+
+
+/* changing the background color of our class navbar */
+.navbar {
+  background: #d67f5d;
+}
+
+/* taking our navbar image and setting it to position absolute that 
+will go outside of the normal flow of our HTML page where we can 
+specify actually where you want it to go with top and left as 
+percentages  */
+
+/* also setting the width and the height of the img */
+
+/* position absolute is ignored by all other elements as if it didn't 
+exist and takes up that empty space */
+
+/* position absolute also looks for it's parent, in this case, it does not 
+have one, so it goes towards the body tag; it's looking for it's nearest 
+parent */
+
+.navbar img {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  top: 1%;
+  left: 1%;
+}
+
+/* Text near our logo has position aboluste that goes with the flow of our .navbar image because that is it's closet 
+parent so the content will go inside there */
+/* color is a hexidecimal number with a brownish color and we have increase the font-size */
+
+.navbar h2 {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: #5e260f;
+  font-size: 1.8rem;
+}
+
+/* targeting our navbar h2 J and g to be white and making the text bold with font-weight */
+.navbar h2 span {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/* making the unordered list items align to the right and adding some margin 
+which is space outside of an element and pushing that to the right  */
+.navbar ul {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+/* adding display: inline-block to our list items to make it line up next to each other horizontally  */
+.navbar li {
+  display: inline-block;
+}
+
+/* adding display block to our navbar anchor tag which 
+changes the behavior from our default inline where the 
+elements line up next to each other display block creates
+a new space and takes up as much width as possible   */
+/* adding padding space inside our content and border on the top and bottom, and left and right */
+/* transition will be added to make the text-shadow on our anchor tags smooth to where it has a delay it 
+won't immediately change the text shadow it will wait for 0.14s and eases in   */
+.navbar a {
+  display: block;
+  padding: 0.55rem 2.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5c4b44;
+  transition: text-shadow 0.14s
+}
+
+/* text shadow; a shadow that goes behind text 
+horizontal
+vertical
+blur 
+color */
+
+/* psuedo element that controls a special state;  hover effect */
+
+.navbar a:hover {
+  text-shadow: 0.1rem 0.1rem 0.2rem #000;
+}
+
+
+/*  */
+
+
+/* setting hero-video to 100% percentage of it's parent container header with
+an overflow of hidden for content to not flow out of it's container 
+object-fit; retaining content within the video */
+
+
+
+.hero-video {
+  width: 100%;
+  overflow: hidden;
+  height: 75rem;
+  object-fit: cover;
+}
+
+
+/* taking hero-video h2 and positioning no top of the video */
+.hero-video h2 {
+  position: absolute;
+  top: 25%;
+  right: 70.5%;
+  color: #d67f5d;
+  font-size: 5rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem #333;
+
+}
+
+/* span colors J and G to white  */
+
+.hero-video span {
+  color: #fff;
+}
+
+/* anchor tag taking after the hero-video h2 positioning and adding
+a transition that will allow the hover effect to delay then ease in*/
+
+.hero-video a {
+  position: absolute;
+  top: 40%;
+  right: 73.5%;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  background: #5c4b44;
+  border-radius: 0.4rem;
+  width: 16rem;
+  height: 5rem;
+  text-align: center;
+  padding: 1rem;
+  transition: background-color 0.15s ease-in
+}
+
+/* psuedo hover adding a special state on hover with background-color and color */
+
+.hero-video a:hover {
+  background-color: #fff;
+  color: #5c4b44;
+}
+
+/* container to hold the main-content and constaining it to 100% */
+.main-content {
+  max-width: 100%;
+  color: #fff;
+  background: #5c4b44;
+}
+
+/* adding margin and padding for offset  */
+.main-content .about {
+  margin-left: 1rem;
+  padding: 15rem;
+}
+
+/* increasing font-size adding padding-bottom to create some separation  */
+
+.main-content .about h2 {
+  font-size: 3.7rem;
+  padding-bottom: 2rem
+}
+
+/* increasing height for sentences and
+  readjusting text based on window screen size */
+
+.main-content .about p {
+  font-size: 3.5rem;
+  line-height: 5rem;
+  text-align: justify;
+
+}
+
+/* anchor tags color and boldness  */
+
+.main-content .go-to-menu-page,
+.go-to-contact-page {
+  color: #d67f5d;
+  font-weight: bold
+}
+
+/* placed in center; increase font-size and add padding  */
+.main-content .reviews {
+  text-align: center;
+  font-size: 3rem;
+  padding: 3.5rem
+}
+
+/* changing background-color to black */
+.testimonal-container {
+  background: #000;
+}
+
+
+/* Ultilizing display: flex on the main axis(horizontally)*/
+.customers {
+  display: flex;
+}
+
+/* adjusting the width and height of imgs and making them circular;
+adding margin to get them as close to the center */
+
+.customers img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 9.5rem
+}
+
+.testimonial-one h3,
+.testimonial-two h3,
+.testimonial-three h3 {
+  /* margin-left: 12.5rem; */
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* centering the testimonals paragraph tags and increasing font-size */
+
+.testimonial-one p,
+.testimonial-two p,
+.testimonial-three p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Adding some space on the bottom */
+
+.testimonial-one,
+.testimonial-two,
+.testimonial-three {
+  padding-bottom: 10rem;
+}
+
+/* End of Home Page */
+
+
+/* Menu Page */
+
+/* Adding padding top to create spacing */
+.menu {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 3rem;
+  color: #5e260f;
+}
+
+/* centering h2 text and simple increasing font-size padding */
+.food-category {
+  text-align: center;
+  font-size: 3rem;
+  color: #5e260f;
+  padding: 5rem;
+}
+
+/* wraps around product card and is placed within the center */
+
+.center-cards {
+  text-align: center;
+}
+
+/* display inline; lines up next to each other */
+.product-card {
+  display: inline-block;
+  margin: 1.5rem;
+  width: 30rem;
+  background-color: #333;
+  color: #fff;
+  /* Adusts according to the added content */
+  height: auto;
+}
+
+/* Adusting width and height and reserving aspect ratio so the resolution isn't sqished it
+fits perfectly within it's container */
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 30rem;
+}
+
+/* styling h2 and p within product-card */
+.product-card h2,
+p {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.8rem
+}
+
+/* adding display block instead of default inline will strech out and take as 
+much space as possible 
+transition will stop the background-color and color from instanly changing there 
+is a delay 
+*/
+.product-card a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #d67f5d;
+  margin: 1.7rem;
+  transition: background-color 0.17s, color 0.15s
+}
+
+/* psuedo special state: hover effecr */
+.product-card a:hover {
+  background-color: #fff;
+  color: #5e260f
+}
+
+/* End of Menu Page */
+
+
+/* Contact Page */
+
+/* centering h2 and p tag
+text-shadow: horizontal, vertical, blur and color
+*/
+.contact-text {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  padding-top: 3rem;
+  text-shadow: 0.1rem 0.1rem 2rem #000
+}
+
+/* background wrapping around main content and form */
+
+.background-image {
+  background: url("../images/steak-on-fire.jpg") no-repeat center center/cover;
+  height: 95rem
+}
+
+/* setting a border-radius that shapes the edges of the container
+box-shadow; creating shadow effect around the container's frame */
+
+.contact-container {
+  margin: 5rem auto;
+  background: #d67f5d;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.7rem #000;
+  max-width: 80%;
+}
+
+
+/* Changing inline elements to block to extend space and allow elements to move 
+on the next line */
+form,
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 1.9rem;
+
+}
+
+/* Increasing font-size */
+form label {
+  font-size: 2rem;
+
+}
+
+/* When user clicks within the input they won't see a border come around the input */
+form input,
+textarea {
+  outline: none;
+}
+
+
+/* changing the asterick color to red and increasing the font-size */
+form label span {
+  color: red;
+  font-size: 2rem;
+}
+
+/* adding style to anchor tag and adding a cursor  */
+form input[type="submit"] {
+  margin-top: 1.5rem;
+  width: 10rem;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+/* pseudo element special state: hover 
+color and background*/
+
+form input[type="submit"]:hover {
+  color: #5e260f;
+  background-color: #fed12d;
+
+
+}
+
+/* disablying resize of message box */
+
+form textarea {
+  resize: none;
+}
+
+
+/* Footer */
+
+/* centering */
+.link-container,
+.end-of-page p {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 3rem
+}
+
+/* Setting width and height and applying space between images */
+.end-of-page img {
+  height: 4rem;
+  width: 4rem;
+  margin: 1.5rem;
+  /* transform: rotate(0deg); */
+}
+
+/* rotating the images on vertically 360 degress
+needs transition; won't work 
+like animations; animation name is the inital state; 
+keyframes is what makes the aniamtion start
+linear starts the effect at the same speed with the start and end*/
+.end-of-page img:hover {
+  transform: rotateY(360deg);
+  transition: all 2s linear;
+}
+
+/* Media Queries; Smartphone */
+@media (max-width: 50rem) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar img {
+    top: 2%;
+    left: 75%;
+    width: 3rem;
+    height: 3rem;
+    /* display: none; */
+  }
+
+  .navbar h2 {
+    position: relative;
+    top: 0;
+    left: 37.5%;
+    padding: 0.5rem;
+    font-weight: bolder;
+  }
+
+  .navbar ul {
+    text-align: center;
+    width: 100%;
+    /* margin-right: 6rem */
+  }
+
+  .navbar li {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar a {
+    font-size: 1.9rem;
+  }
+
+  .hero-video {
+    /*  overflow: none; */
+  }
+
+  .hero-video h2 {
+    top: 45%;
+    right: 17.5%;
+  }
+
+  .hero-video a {
+    top: 60%;
+    right: 29.2%;
+  }
+
+  .main-content .about {
+    margin-left: 0
+  }
+
+  .main-content .about h2 {
+    padding-top: 3rem;
+  }
+
+  .main-content .about {
+    padding: 1rem;
+    text-align: center;
+    /* border: 1px solid red; */
+
+  }
+
+  .main-content .about p {
+    /* text-align: center; */
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  .main-content .reviews {
+    padding-top: 5rem;
+  }
+
+  .main-content .reviews {
+    padding-bottom: 1.5rem;
+  }
+
+
+
+  .customers {
+    flex-direction: column;
+  }
+
+  .customers img {
+    margin: 6.5rem;
+  }
+
+  .background-image {
+    height: 100rem;
+  }
+
+  .contact-container {
+    max-width: 95%;
+
+  }
+
+
+  form input,
+  textarea {
+    background-color: #fff;
+    border: none;
+  }
+
+  .end-of-page img {
+    margin: 0.9rem;
+  }
+
+  .end-of-page img:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* @media (max-width: 32rem) {
+
+  .navbar h2 {
+    position: relative;
+    top: 0;
+    left: 37%;
+    padding: 0.5rem;
+    font-weight: bolder;
+  }
+
+  .hero-video h2 {
+    top: 45%;
+    right: 25%;
+    font-size: 3.5rem;
+  }
+
+  .hero-video a {
+    top: 60%;
+    right: 27.5%;
+  }
+
+  .customers {
+    flex-direction: column;
+  }
+
+  .customers img {
+    margin: 3.5rem;
+  }
+
+  form input {
+    background-color: #fff;
+    border: none;
+  }
+
+  .end-of-page img {
+    margin: 0.9rem;
+  }
+
+  .end-of-page img:hover {
+    transform: none;
+    transition: none;
+  }
+
+  .product-card {
+    margin: 1rem;
+  }
+
+
+} */
